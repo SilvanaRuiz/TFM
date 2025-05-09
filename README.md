@@ -1,9 +1,9 @@
 
 # Identification of Suicide Risk Factors in the Penitentiary Population
 
-This repository contains the code used to analyze and generate a machine learning model based on blending techniques to classify suicide risk in Spanish prisoners. This project is part of the master's dissertation of **Silvana Ruiz Medina** for the Master's in Bioinformatics and Computational Biology.
+This repository contains the code used to analyze and generate a machine learning model based on blending techniques to classify suicide risk in Spanish prisoners. This project is part of the master's dissertation of **Silvana Ruiz Medina** for the Master's in Bioinformatics and Computational Biology at the **Universidad Autónoma de Madrid**.
 
-## 📘 Project Description
+## Project Description
 
 Suicide risk among inmates in developed countries is substantially higher than in the general population. This study uses anonymized historical data provided by Spanish penitentiary institutions to identify predictive factors of suicidal behavior. 
 
@@ -13,7 +13,7 @@ The goal is to support prevention by applying machine learning techniques — fr
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```
 .
@@ -28,7 +28,7 @@ The goal is to support prevention by applying machine learning techniques — fr
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup Instructions
 
 1. **Clone the repository:**
 
@@ -52,7 +52,7 @@ The goal is to support prevention by applying machine learning techniques — fr
 
 ---
 
-## 🚀 Usage Workflow
+## Usage Workflow
 
 Due to the academic nature of the project and data confidentiality, this code is intended for educational and research purposes only. Here's the logical workflow to run the analysis:
 
@@ -63,22 +63,19 @@ Due to the academic nature of the project and data confidentiality, this code is
 
 ---
 
-## 🔐 Data Privacy
+## Data Privacy
 
 The dataset used in this study contains sensitive information about inmates and **is not publicly available**. All data processing and modeling has been done in compliance with ethical and legal standards regarding confidentiality.
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Silvana Ruiz Medina**  
-Master's student in Bioinformatics and Computational Biology  
+Master's student in Bioinformatics and Computational Biology
+**Universidad Autónoma de Madrid** 
 Supervised by:  
 - Dr. Hilario Blasco-Fontecilla (External Director)  
 - Dr. Aythami Morales Moreno (Academic Tutor)
 
----
 
-## 📄 License
-
-This is an **academic project**. No license is granted for commercial use. Contact the author for academic reuse.
