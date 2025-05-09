@@ -72,8 +72,8 @@ The dataset used in this study contains sensitive information about inmates and 
 ## Author
 
 **Silvana Ruiz Medina**  
-Master's student in Bioinformatics and Computational Biology
-**Universidad Autónoma de Madrid** 
+Master's student in Bioinformatics and Computational Biology 
+**Universidad Autónoma de Madrid**  
 Supervised by:  
 - Dr. Hilario Blasco-Fontecilla (External Director)  
 - Dr. Aythami Morales Moreno (Academic Tutor)
