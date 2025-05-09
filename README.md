@@ -34,6 +34,7 @@ The goal is to support prevention by applying machine learning techniques — fr
 
    ```bash
    git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/SilvanaRuiz/TFM.git
    cd your-repo-name
    ```
 
