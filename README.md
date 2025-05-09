@@ -47,7 +47,7 @@ The goal is to support prevention by applying machine learning techniques — fr
 3. **Install the dependencies:**
 
    ```bash
-   pip install -r requirements_final.txt
+   pip install -r requirements.txt
    ```
 
 ---
