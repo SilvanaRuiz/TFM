@@ -23,7 +23,7 @@ The goal is to support prevention by applying machine learning techniques — fr
 │   ├── modelo_*.ipynb      # ML model training
 │   └── prueba_model_*.ipynb# Model testing and evaluation
 ├── Objetos/                # Serialized objects (models, encoders, etc.)
-└── requirements_final.txt  # Python package dependencies
+└── requirements.txt  # Python package dependencies
 ```
 
 ---
