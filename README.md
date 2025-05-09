@@ -33,9 +33,8 @@ The goal is to support prevention by applying machine learning techniques — fr
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
    git clone https://github.com/SilvanaRuiz/TFM.git
-   cd your-repo-name
+   cd TFM
    ```
 
 2. **Create and activate a virtual environment:**
