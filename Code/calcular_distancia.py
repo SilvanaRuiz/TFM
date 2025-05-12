@@ -9,13 +9,13 @@ import googlemaps
 BATCH_SIZE = 53
 DEFAULT_TIME_MINUTES = 10000
 
+# Carga datos desde un archivo pickle.
 def cargar_datos_pickle(filepath):
-    """Carga datos desde un archivo pickle."""
     with open(filepath, 'rb') as f:
         return pl.load(f)
 
+# Asigna coordenadas al dataframe basándose en referencias.
 def asignar_coordenadas(dataframe, referencias, columna_busqueda, lat_col, lon_col):
-    """Asigna coordenadas al dataframe basándose en referencias."""
     for i, fila in dataframe.iterrows():
         for referencia in referencias:
             if fila[columna_busqueda] == referencia[0]:
@@ -23,8 +23,8 @@ def asignar_coordenadas(dataframe, referencias, columna_busqueda, lat_col, lon_c
                 dataframe.at[i, lon_col] = referencia[3]
     return dataframe
 
+# Calcula la distancia y el tiempo entre dos coordenadas usando Google Maps.
 def calcular_distancia_tiempo(api_key, lat1, lon1, lat2, lon2, max_retries=3):
-    """Calcula la distancia y el tiempo entre dos coordenadas usando Google Maps."""
     gmaps = googlemaps.Client(key=api_key)
     origen = (lat1, lon1)
     destino = (lat2, lon2)
@@ -43,8 +43,9 @@ def calcular_distancia_tiempo(api_key, lat1, lon1, lat2, lon2, max_retries=3):
             else:
                 return "Error", "Error"
 
+# Calcula la lejanía entre centros y municipios.
 def localizacion_centro_provincia(dataframe_principal):
-    """Calcula la lejanía entre centros y municipios."""
+
     centros_provincias = dataframe_principal[['NOMBRE_CENTRO', 'PROVINCIA_RESIDENCIA']].copy()
 
     # Cargar datos desde archivos pickle
@@ -122,16 +123,7 @@ def localizacion_centro_provincia(dataframe_principal):
 
 # Función para convertir Años-Meses-Días a días
 def convertir_a_dias(valor):
-    """
-    Convierte una cadena en formato 'Años-Meses-Días' a días totales.
 
-    Args:
-        valor (str): Cadena en formato 'Años-Meses-Días'.
-
-    Returns:
-        int: Total de días calculados.
-        0: Si el valor es NaN o no válido.
-    """
     try:
         # Devolver valores nulos con 0 (desconocido¬todavia no condenado)
         if pd.isna(valor):
