@@ -18,12 +18,15 @@ The goal is to support prevention by applying machine learning techniques — fr
 ```
 .
 ├── Code/
-│   ├── EDA_*.ipynb         # Exploratory Data Analysis scripts
-│   ├── concat_df_*.ipynb   # Data concatenation and preprocessing
-│   ├── modelo_*.ipynb      # ML model training
-│   └── prueba_model_*.ipynb# Model testing and evaluation
-├── Objetos/                # Serialized objects (models, encoders, etc.)
-└── requirements.txt  # Python package dependencies
+│   ├── EDA_*.ipynb                  # Exploratory Data Analysis scripts
+│   ├── concat_df_*.ipynb           # Data concatenation and preprocessing
+│   ├── modelo_*.ipynb              # ML model training
+│   ├── prueba_model_*.ipynb        # Model testing and evaluation
+│   ├── geo_localizacion.ipynb      # Geolocation-related function for mapping inmate origins
+│   ├── calcular_distancia.py       # Utility functions to calculate distances for feature engineering
+│   └── tabla_epidemiologica.ipynb  # Statistical testing to identify significant group differences
+├── Objetos/                        # Serialized objects (models, encoders, etc.)
+├── requirements.txt               # Python package dependencies
 ```
 
 ---
